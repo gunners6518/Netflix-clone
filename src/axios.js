@@ -2,9 +2,11 @@ import axios from 'axios'
 
 
 //movie databaseからのbaseURLリクエストを作成
-export const instance = axios.create({
+const instance = axios.create({
     baseURL:"https://api.themoviedb.org/3",
 });
+
+export default instance;
 
 //使い方
 // instance.get('/foo-bar')
