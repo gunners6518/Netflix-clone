@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       {/* navbar */}
       <Banner />
-      <h1>Netlix clone</h1>
       <Row
         title="NETFLIX ORIGUINALS"
         fetchUrl={requests.feachNetflixOriginals}
