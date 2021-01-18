@@ -38,7 +38,10 @@ export const Banner = () => {
 
   // descriptionの切り捨てよう関数
   function truncate(str: any, n: number) {
-    return str.length > n ? str.substr(0, n - 1) + "..." : str;
+    // undefinedを弾く
+    if (str !== undefined) {
+      return str.length > n ? str?.substr(0, n - 1) + "..." : str;
+    }
   }
 
   return (
