@@ -3,6 +3,7 @@ import YouTube from "react-youtube";
 import axios from "./../axios";
 import "./Row.scss";
 // import movieTrailer from "movie-trailer";
+// const movieTrailer = require("movie-trailer");
 
 const base_url = "https://image.tmdb.org/t/p/original";
 
@@ -15,6 +16,8 @@ type Props = {
 type Movie = {
   id: string;
   name: string;
+  title: string;
+  original_name: string;
   poster_path: string;
   backdrop_path: string;
 };
@@ -51,7 +54,7 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
     },
   };
 
-  const handleClick = async (movie: any) => {
+  const handleClick = async (movie: Movie) => {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
@@ -60,6 +63,13 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
       );
       setTrailerUrl(trailerurl.data.results[0]?.key);
     }
+    //   movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
+    //     .then((url: string) => {
+    //       const urlParams = new URLSearchParams(new URL(url).search);
+    //       setTrailerUrl(urlParams.get("v"));
+    //     })
+    //     .catch((error: any) => console.log(error.message));
+    // }
   };
 
   return (
