@@ -5,10 +5,6 @@ import axios from "./../axios";
 import { requests } from "./../request";
 import "./Banner.scss";
 
-type Props = {
-  className?: string;
-};
-
 type movieProps = {
   title?: string;
   name?: string;
