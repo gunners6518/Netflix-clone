@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/youtube": "0.0.38",
     "axios": "^0.21.1",
+    "eslint-config-react-app": "^6.0.0",
     "movie-trailer": "^2.0.7",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
@@ -44,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-react": "^1.1.7"
   }
 }
