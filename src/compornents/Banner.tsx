@@ -1,8 +1,5 @@
 import { request } from "https";
 import React, { useState, useEffect } from "react";
-import { DEFAULT_MIN_VERSION } from "tls";
-import axios from "./../axios";
-import { requests } from "./../request";
 import "./Banner.scss";
 
 type movieProps = {
@@ -15,21 +12,21 @@ type movieProps = {
 
 export const Banner = () => {
   const [movie, setMovie] = useState<movieProps>({});
-  useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(requests.feachNetflixOriginals);
-      console.log(request.data.result);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const request = await axios.get(requests.feachNetflixOriginals);
+  //     console.log(request.data.result);
 
-      //apiからランんダムで値を取得している
-      setMovie(
-        request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1)
-        ]
-      );
-      return request;
-    }
-    fetchData();
-  }, []);
+  //     //apiからランんダムで値を取得している
+  //     setMovie(
+  //       request.data.results[
+  //         Math.floor(Math.random() * request.data.results.length - 1)
+  //       ]
+  //     );
+  //     return request;
+  //   }
+  //   fetchData();
+  // }, []);
   console.log(movie);
 
   // descriptionの切り捨てよう関数
