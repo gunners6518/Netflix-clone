@@ -4,7 +4,7 @@ import "./Row.scss";
 
 type Props = {
   title: string;
-  fetchUrl: string;
+  requests: any;
   isLargeRow?: boolean;
 };
 
@@ -26,7 +26,7 @@ type Options = {
   };
 };
 
-export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
+export const Row = ({ title, requests, isLargeRow }: Props) => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [trailerUrl, setTrailerUrl] = useState<string | null>("");
 
@@ -39,6 +39,8 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
   //   }
   //   fetchData();
   // }, [fetchUrl]);
+
+  setMovies(requests.data.results);
 
   console.log(movies);
 
