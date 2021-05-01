@@ -3,7 +3,7 @@ import "./App.css";
 import { Row } from "./compornents/Row";
 import { Banner } from "./compornents/Banner";
 import { Nav } from "./compornents/Nav";
-import { NetflixOriginals } from "./request";
+import { requests } from "./request";
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
       <Nav />
       <Banner />
       {/* <Row title="NETFLIX ORIGUINALS" fetchUrl={} isLargeRow /> */}
-      <Row title="Top Rated" requests={NetflixOriginals} />
+      <Row title="Top Rated" requests={requests.NetflixOriginals} />
+      <Row title="Anime Movies" requests={requests.AnimeMovies} />
       {/* <Row title="Action Movies"  />
       <Row title="Comedy Movies"  />
       <Row title="Horror Movies"  />
