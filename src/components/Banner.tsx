@@ -1,8 +1,8 @@
 import { request } from "https";
 import React, { useState, useEffect } from "react";
 import { DEFAULT_MIN_VERSION } from "tls";
-import axios from "./../axios";
-import { requests } from "./../request";
+import axios from "../axios";
+import { requests } from "../request";
 import "./Banner.scss";
 
 type movieProps = {
@@ -20,7 +20,7 @@ export const Banner = () => {
       const request = await axios.get(requests.feachNetflixOriginals);
       console.log(request.data.result);
 
-      //apiからランんダムで値を取得している
+      //apiからランダムで値を取得している
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
