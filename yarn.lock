@@ -13443,10 +13443,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-web-vitals@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.npmjs.org/web-vitals/-/web-vitals-0.2.4.tgz"
-  integrity sha512-6BjspCO9VriYy12z356nL6JBS0GYeEcA457YyRzD+dD6XYCQ75NKhcOHUMHentOE7OcVCIXXDvOm0jKFfQG2Gg==
+web-vitals@2.1.4:
+  version "2.1.4"
+  resolved "https://registry.npmjs.org/web-vitals/-/web-vitals-2.1.4.tgz"
+  integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
 
 webidl-conversions@^5.0.0:
   version "5.0.0"
