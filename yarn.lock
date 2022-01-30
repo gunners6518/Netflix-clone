@@ -1978,10 +1978,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@types/youtube@0.0.38":
-  version "0.0.38"
-  resolved "https://registry.npmjs.org/@types/youtube/-/youtube-0.0.38.tgz"
-  integrity sha512-rS0nLlnnZIvOfBNT4957rkKRMHjHxutoVhSEzowocYgNiTMVBmN+Hbkf/L3TeGMMtts9uKZ9gw7O2JLHREVnIw==
+"@types/youtube@0.0.46":
+  version "0.0.46"
+  resolved "https://registry.npmjs.org/@types/youtube/-/youtube-0.0.46.tgz"
+  integrity sha512-Yf1Y4bDj/QIn8v+zdy0l7+OW6s1uoUvzVn5cGqPNCsL4iUW4gYUlIdQIRtH9NOHVgwZNLbVeeRDEn6N4RMq6Nw==
 
 "@typescript-eslint/eslint-plugin@^4.11.1", "@typescript-eslint/eslint-plugin@^4.5.0":
   version "4.33.0"
