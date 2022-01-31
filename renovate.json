@@ -1,4 +1,10 @@
 {
   "extends": ["config:base"],
-  "assignAutomerge": true
+  "assignAutomerge": true,
+  "packageRules": [
+    {
+      "groupName": "definitelyTyped",
+      "matchPackagePrefixes": ["@types/"]
+    }
+  ]
 }
