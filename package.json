@@ -11,7 +11,7 @@
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
     "@types/youtube": "0.0.38",
-    "axios": "0.21.1",
+    "axios": "0.25.0",
     "movie-trailer": "2.1.0",
     "node-sass": "7.0.1",
     "react": "17.0.1",
