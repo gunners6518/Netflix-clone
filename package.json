@@ -10,7 +10,7 @@
     "@types/node": "16.11.21",
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
-    "@types/youtube": "0.0.38",
+    "@types/youtube": "0.0.46",
     "axios": "0.25.0",
     "movie-trailer": "2.1.0",
     "node-sass": "7.0.1",
