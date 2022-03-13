@@ -13,11 +13,11 @@
     "@types/youtube": "0.0.38",
     "axios": "0.25.0",
     "movie-trailer": "2.1.0",
-    "node-sass": "7.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "4.0.3",
     "react-youtube": "7.14.0",
+    "sass": "^1.49.9",
     "typescript": "4.5.5",
     "web-vitals": "2.1.4"
   },
