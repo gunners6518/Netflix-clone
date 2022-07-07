@@ -1942,10 +1942,10 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-17.0.21.tgz"
   integrity sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==
 
-"@types/node@16.11.42":
-  version "16.11.42"
-  resolved "https://registry.npmjs.org/@types/node/-/node-16.11.42.tgz"
-  integrity sha512-iwLrPOopPy6V3E+1yHTpJea3bdsNso0b0utLOJJwaa/PLzqBt3GZl3stMcakc/gr89SfcNk2ki3z7Gvue9hYGQ==
+"@types/node@16.11.43":
+  version "16.11.43"
+  resolved "https://registry.npmjs.org/@types/node/-/node-16.11.43.tgz"
+  integrity sha512-GqWykok+3uocgfAJM8imbozrqLnPyTrpFlrryURQlw1EesPUCx5XxTiucWDSFF9/NUEXDuD4bnvHm8xfVGWTpQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1982,17 +1982,17 @@
   resolved "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.4.tgz"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@18.0.5", "@types/react-dom@^18.0.0":
-  version "18.0.5"
-  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.0.5.tgz"
-  integrity sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==
+"@types/react-dom@18.0.6", "@types/react-dom@^18.0.0":
+  version "18.0.6"
+  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.0.6.tgz"
+  integrity sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@18.0.14":
-  version "18.0.14"
-  resolved "https://registry.npmjs.org/@types/react/-/react-18.0.14.tgz"
-  integrity sha512-x4gGuASSiWmo0xjDLpm5mPb52syZHJx02VKbqUKdLmKtAwIh63XClGsiTI1K6DO5q7ox4xAsQrU+Gl3+gGXF9Q==
+"@types/react@*", "@types/react@18.0.15":
+  version "18.0.15"
+  resolved "https://registry.npmjs.org/@types/react/-/react-18.0.15.tgz"
+  integrity sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4913,9 +4913,9 @@ eslint@^7.17.0:
     v8-compile-cache "^2.0.3"
 
 eslint@^8.3.0:
-  version "8.18.0"
-  resolved "https://registry.npmjs.org/eslint/-/eslint-8.18.0.tgz"
-  integrity sha512-As1EfFMVk7Xc6/CvhssHUjsAQSkpfXvUGMFC3ce8JDe6WvqCgRrLOBQbVpsBFr1X1V+RACOadnzVvcUS5ni2bA==
+  version "8.19.0"
+  resolved "https://registry.npmjs.org/eslint/-/eslint-8.19.0.tgz"
+  integrity sha512-SXOPj3x9VKvPe81TjjUJCYlV4oJjQw68Uek+AM0X4p+33dj2HY5bpTZOgnQHcG2eAm1mtCU9uNMnJi7exU/kYw==
   dependencies:
     "@eslint/eslintrc" "^1.3.0"
     "@humanwhocodes/config-array" "^0.9.2"
