@@ -1710,10 +1710,10 @@
     "@testing-library/dom" "^8.5.0"
     "@types/react-dom" "^18.0.0"
 
-"@testing-library/user-event@14.4.1":
-  version "14.4.1"
-  resolved "https://registry.npmjs.org/@testing-library/user-event/-/user-event-14.4.1.tgz"
-  integrity sha512-Gr20dje1RaNxZ1ehHGPvFkLswfetBQKCfRD/lo6sUJQ52X2TV/QnqUpkjoShfEebrB2KiTPfQkcONwdQiofLhg==
+"@testing-library/user-event@14.4.3":
+  version "14.4.3"
+  resolved "https://registry.npmjs.org/@testing-library/user-event/-/user-event-14.4.3.tgz"
+  integrity sha512-kCUc5MEwaEMakkO5x7aoD+DLi02ehmEM2QCGWvNqAS1dV/fAvORWEjnjsEIvml59M7Y5kCkWN6fCCyPOe8OL6Q==
 
 "@tootallnate/once@1":
   version "1.1.2"
