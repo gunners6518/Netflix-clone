@@ -12,7 +12,7 @@
     "@types/react-dom": "18.0.8",
     "@types/youtube": "0.0.47",
     "axios": "1.1.3",
-    "movie-trailer": "2.1.0",
+    "movie-trailer": "3.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
