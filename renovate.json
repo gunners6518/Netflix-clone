@@ -4,7 +4,8 @@
   "packageRules": [
     {
       "groupName": "definitelyTyped",
-      "matchPackagePrefixes": ["@types/"]
+      "matchPackagePrefixes": ["@types/"],
+      "automerge": true
     }
   ]
 }
