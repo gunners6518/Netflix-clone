@@ -8,7 +8,7 @@ import "./Banner.scss";
 type movieProps = {
   title?: string;
   name?: string;
-  orignal_name?: string;
+  original_name?: string;
   backdrop_path?: string;
   overview?: string;
 };
@@ -17,8 +17,7 @@ export const Banner = () => {
   const [movie, setMovie] = useState<movieProps>({});
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.feachNetflixOriginals);
-      console.log(request.data.result);
+      const request = await axios.get(requests.fetchNetflixOriginals);
 
       //apiからランダムで値を取得している
       setMovie(
@@ -30,7 +29,6 @@ export const Banner = () => {
     }
     fetchData();
   }, []);
-  console.log(movie);
 
   // descriptionの切り捨てよう関数
   function truncate(str: any, n: number) {
@@ -51,7 +49,7 @@ export const Banner = () => {
     >
       <div className="Banner-contents">
         <h1 className="banner-title">
-          {movie?.title || movie?.name || movie?.orignal_name}
+          {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="Banner-buttons">
           <button className="Banner-button">Play</button>
