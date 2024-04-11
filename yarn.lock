@@ -1707,10 +1707,10 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react@14.0.0":
-  version "14.0.0"
-  resolved "https://registry.npmjs.org/@testing-library/react/-/react-14.0.0.tgz"
-  integrity sha512-S04gSNJbYE30TlIMLTzv6QCTzt9AqIF5y6s6SzVFILNcNvbV/jU96GeiTPillGQo+Ny64M/5PV7klNYYgv5Dfg==
+"@testing-library/react@14.3.1":
+  version "14.3.1"
+  resolved "https://registry.npmjs.org/@testing-library/react/-/react-14.3.1.tgz"
+  integrity sha512-H99XjUhWQw0lTgyMN05W3xQG1Nh4lq574D8keFf1dDoNTJgp66VbJozRaczoF+wsiaPJNt/TcnfpLGufGxSrZQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^9.0.0"
