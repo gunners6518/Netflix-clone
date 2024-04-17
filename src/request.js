@@ -1,4 +1,4 @@
-const API_KEY = "998fbc8cc4dcef8db8fe2fd268686191";
+const API_KEY = "xxx";
 const BASE_URL = "/discover/tv?api_key=";
 
 export const requests ={
