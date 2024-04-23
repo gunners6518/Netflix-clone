@@ -4,6 +4,9 @@ import { Banner } from "./components/Banner";
 import { Header } from "./components/Header";
 
 function App() {
+  console.log("aaa");
+  console.log("bbb");
+  console.log("ccc");
   return (
     <div className="App">
       <Header />
