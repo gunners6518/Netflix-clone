@@ -1,26 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "../../axios";
+import { useQuery } from "react-query";
 import { Movie } from "../../type.ts";
 import { requests } from "../../request.ts";
 
-export const useProps = (fetchUrl: string) => {
-  const [movies, setMovies] = useState<Movie[]>([]);
+export const useProps = (fetchUrl: string, title: string) => {
   const [trailerUrl, setTrailerUrl] = useState<string | null>("");
+  const fetchData = async () => {
+    const request = await axios.get(fetchUrl);
+    return request.data.results.map((movie: Movie) => ({
+      id: movie.id,
+      name: movie.name,
+      poster_path: movie.poster_path,
+      backdrop_path: movie.backdrop_path,
+    }));
+  };
 
-  useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(fetchUrl);
-      const movies = request.data.results.map((movie: Movie) => ({
-        id: movie.id,
-        name: movie.name,
-        poster_path: movie.poster_path,
-        backdrop_path: movie.backdrop_path,
-      }));
-      setMovies(movies);
-      return request;
-    }
-    fetchData();
-  }, [fetchUrl]);
+  const { data: movies, isLoading } = useQuery(`${title}movies`, fetchData);
 
   const handleClick = async (movie: Movie) => {
     if (trailerUrl) {
@@ -35,5 +31,6 @@ export const useProps = (fetchUrl: string) => {
     movies,
     trailerUrl,
     handleClick,
+    isLoading,
   };
 };
