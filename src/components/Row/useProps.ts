@@ -8,7 +8,7 @@ export const useProps = (fetchUrl: string, title: string) => {
   const [trailerUrl, setTrailerUrl] = useState<string | null>("");
   const fetchData = async () => {
     const request = await axios.get(fetchUrl);
-    return request.data.results.map((movie: Movie) => ({
+    return request.data.results.slice(0, 10).map((movie: Movie) => ({
       id: movie.id,
       name: movie.name,
       poster_path: movie.poster_path,
@@ -16,7 +16,7 @@ export const useProps = (fetchUrl: string, title: string) => {
     }));
   };
 
-  const { data: movies, isLoading } = useQuery(`${title}movies`, fetchData);
+  const { data: movies, isLoading } = useQuery(`${title}/movies`, fetchData);
 
   const handleClick = async (movie: Movie) => {
     if (trailerUrl) {
