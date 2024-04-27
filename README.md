@@ -9,6 +9,10 @@ React+TypeScriptで作ったNetflixクローンアプリケーションです。
 - Vercel
 
 ## チュートリアル
+note
+https://note.com/terry10/n/nf0674af97617
+
+zenn
 https://zenn.dev/gunners6518/books/4c4672f32dd100
 
 ## デモ画面
