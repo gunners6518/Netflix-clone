@@ -2,7 +2,13 @@ import { useProps } from "./useProps";
 import { Layout, Props } from "./Layout";
 
 export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
-    const movies = useProps(fetchUrl);
+    const results = useProps(fetchUrl);
 
-    return <Layout title={title} movies={movies} isLargeRow={isLargeRow} />;
+    return <Layout 
+                title={title}
+                movies={results.movies} 
+                isLargeRow={isLargeRow} 
+                handleClick={results.handleClick}
+                trailerUrl={results.trailerUrl}
+            />;
 };
