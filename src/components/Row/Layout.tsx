@@ -1,12 +1,6 @@
 import { Movie } from "../../type.ts";
 import YouTube from "react-youtube";
 
-export type Props = {
-  title: string;
-  fetchUrl: string;
-  isLargeRow?: boolean;
-};
-
 type LayoutProps = {
   title: string;
   isLargeRow?: boolean;
