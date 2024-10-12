@@ -1,13 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "../../axios";
 
-// ②データの整形
-export type Movie = {
-    id: string;
-    name: string;
-    poster_path: string;  // 画像の表示に使用
-    backdrop_path: string;  // 画像の表示に使用
-};
 
 export const useProps = (fetchUrl: string) => {
     const [movies, setMovies] = useState<Movie[]>([]);
