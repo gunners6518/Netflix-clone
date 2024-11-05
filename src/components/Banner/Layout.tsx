@@ -20,7 +20,7 @@ export const Layout = ({ movie, truncate }: Props) => {
           {movie && truncate(movie?.overview, 150)}
         </div>
       </div>
-     // ① Tailwindのグラデーション
+      
       <div className="h-[7.4rem] bg-gradual-gradient" />
     </header>
   );

@@ -62,7 +62,7 @@ export const Layout = ({
           />
         ))}
       </div>
-　　　　　　　　　　　　// 追加
+　　　　　　　　　　　　
       {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );

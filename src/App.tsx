@@ -1,12 +1,12 @@
 
 import { Row } from "./components/Row";
 import { requests } from "./request";
-
+import { Banner } from "./components/Banner";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      // 追加
       <Header />
       <Banner />
       <Row
