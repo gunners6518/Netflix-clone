@@ -1,0 +1,1 @@
+self.__INTERCEPTION_ROUTE_REWRITE_MANIFEST="[{\"source\":\"/movie/:id\",\"destination\":\"/(.)movie/:id\",\"has\":[{\"type\":\"header\",\"key\":\"next-url\",\"value\":\"(?:\\\\/(.*))?[\\\\/#\\\\?]?\"}],\"regex\":\"^\\\\/movie(?:\\\\/([^\\\\/]+?))(?:\\\\/)?$\"}]"
