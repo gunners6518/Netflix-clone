@@ -17,6 +17,9 @@ dist-ssr
 .next
 out
 
+# Documentation
+docs/旧原稿/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
