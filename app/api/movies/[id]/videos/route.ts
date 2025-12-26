@@ -1,4 +1,4 @@
-import { fetchMovieVideos } from "@/app/actions/tmdb";
+import { fetchMovieVideos } from "@/lib/actions/tmdb";
 import { NextResponse } from "next/server";
 
 export async function GET(

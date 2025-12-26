@@ -1,128 +1,35 @@
 {
   "node": {
-    "00ad73d5099dd037eb63c23e50d4211efcb8ecc02f": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%2200ad73d5099dd037eb63c23e50d4211efcb8ecc02f%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260dae3ff91178ed1fe3e9e43023fd4ddae751f539e%22%2C%22exportedName%22%3A%22signupAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260e37f3ee00db3a4bd04df38348f5d8b8d4b58d8ab%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%2200ad73d5099dd037eb63c23e50d4211efcb8ecc02f%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260dae3ff91178ed1fe3e9e43023fd4ddae751f539e%22%2C%22exportedName%22%3A%22signupAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260e37f3ee00db3a4bd04df38348f5d8b8d4b58d8ab%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser",
-        "app/@modal/(.)movie/[id]/page": "action-browser"
-      },
-      "filename": "app/actions/auth-actions.ts",
-      "exportedName": "logoutAction"
-    },
-    "60dae3ff91178ed1fe3e9e43023fd4ddae751f539e": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%2200ad73d5099dd037eb63c23e50d4211efcb8ecc02f%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260dae3ff91178ed1fe3e9e43023fd4ddae751f539e%22%2C%22exportedName%22%3A%22signupAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260e37f3ee00db3a4bd04df38348f5d8b8d4b58d8ab%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%2200ad73d5099dd037eb63c23e50d4211efcb8ecc02f%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260dae3ff91178ed1fe3e9e43023fd4ddae751f539e%22%2C%22exportedName%22%3A%22signupAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260e37f3ee00db3a4bd04df38348f5d8b8d4b58d8ab%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser",
-        "app/@modal/(.)movie/[id]/page": "action-browser"
-      },
-      "filename": "app/actions/auth-actions.ts",
-      "exportedName": "signupAction"
-    },
-    "60e37f3ee00db3a4bd04df38348f5d8b8d4b58d8ab": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%2200ad73d5099dd037eb63c23e50d4211efcb8ecc02f%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260dae3ff91178ed1fe3e9e43023fd4ddae751f539e%22%2C%22exportedName%22%3A%22signupAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260e37f3ee00db3a4bd04df38348f5d8b8d4b58d8ab%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        },
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%2200ad73d5099dd037eb63c23e50d4211efcb8ecc02f%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260dae3ff91178ed1fe3e9e43023fd4ddae751f539e%22%2C%22exportedName%22%3A%22signupAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%2C%7B%22id%22%3A%2260e37f3ee00db3a4bd04df38348f5d8b8d4b58d8ab%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22app%2Factions%2Fauth-actions.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser",
-        "app/@modal/(.)movie/[id]/page": "action-browser"
-      },
-      "filename": "app/actions/auth-actions.ts",
-      "exportedName": "loginAction"
-    },
     "4037006cb3874b140dd64798f32337c899b66ca4b4": {
       "workers": {
         "app/api/movies/[id]/videos/route": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%224037006cb3874b140dd64798f32337c899b66ca4b4%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22app%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fuser-actions.ts%22%2C%5B%7B%22id%22%3A%22400160122c6c04318d9c552ae360165ecc6451f0c6%22%2C%22exportedName%22%3A%22toggleMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240c68cdadba9ab8344d5af994208badf74e87f3b29%22%2C%22exportedName%22%3A%22removeFromMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240cb4d42bac0a60f352d9da93e4a0decb12cab74e2%22%2C%22exportedName%22%3A%22addToMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240da2d5f4a3069dcabe55b8ec479cb01bcada4dbf7%22%2C%22exportedName%22%3A%22isInMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%5D%5D%2C%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%224037006cb3874b140dd64798f32337c899b66ca4b4%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22app%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Flib%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%22400908579cf705419db27a66f290105203b9224873%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22lib%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
         "app/api/movies/[id]/videos/route": "rsc",
-        "app/@modal/(.)movie/[id]/page": "rsc"
+        "app/page": "rsc"
       },
       "filename": "app/actions/tmdb.ts",
       "exportedName": "fetchMovieVideos"
     },
-    "400160122c6c04318d9c552ae360165ecc6451f0c6": {
+    "400908579cf705419db27a66f290105203b9224873": {
       "workers": {
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fuser-actions.ts%22%2C%5B%7B%22id%22%3A%22400160122c6c04318d9c552ae360165ecc6451f0c6%22%2C%22exportedName%22%3A%22toggleMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240c68cdadba9ab8344d5af994208badf74e87f3b29%22%2C%22exportedName%22%3A%22removeFromMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240cb4d42bac0a60f352d9da93e4a0decb12cab74e2%22%2C%22exportedName%22%3A%22addToMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240da2d5f4a3069dcabe55b8ec479cb01bcada4dbf7%22%2C%22exportedName%22%3A%22isInMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%5D%5D%2C%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%224037006cb3874b140dd64798f32337c899b66ca4b4%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22app%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
+        "app/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Flib%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%22400908579cf705419db27a66f290105203b9224873%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22lib%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
-        "app/@modal/(.)movie/[id]/page": "rsc"
+        "app/page": "rsc"
       },
-      "filename": "app/actions/user-actions.ts",
-      "exportedName": "toggleMyList"
-    },
-    "40c68cdadba9ab8344d5af994208badf74e87f3b29": {
-      "workers": {
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fuser-actions.ts%22%2C%5B%7B%22id%22%3A%22400160122c6c04318d9c552ae360165ecc6451f0c6%22%2C%22exportedName%22%3A%22toggleMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240c68cdadba9ab8344d5af994208badf74e87f3b29%22%2C%22exportedName%22%3A%22removeFromMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240cb4d42bac0a60f352d9da93e4a0decb12cab74e2%22%2C%22exportedName%22%3A%22addToMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240da2d5f4a3069dcabe55b8ec479cb01bcada4dbf7%22%2C%22exportedName%22%3A%22isInMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%5D%5D%2C%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%224037006cb3874b140dd64798f32337c899b66ca4b4%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22app%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/@modal/(.)movie/[id]/page": "rsc"
-      },
-      "filename": "app/actions/user-actions.ts",
-      "exportedName": "removeFromMyList"
-    },
-    "40cb4d42bac0a60f352d9da93e4a0decb12cab74e2": {
-      "workers": {
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fuser-actions.ts%22%2C%5B%7B%22id%22%3A%22400160122c6c04318d9c552ae360165ecc6451f0c6%22%2C%22exportedName%22%3A%22toggleMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240c68cdadba9ab8344d5af994208badf74e87f3b29%22%2C%22exportedName%22%3A%22removeFromMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240cb4d42bac0a60f352d9da93e4a0decb12cab74e2%22%2C%22exportedName%22%3A%22addToMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240da2d5f4a3069dcabe55b8ec479cb01bcada4dbf7%22%2C%22exportedName%22%3A%22isInMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%5D%5D%2C%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%224037006cb3874b140dd64798f32337c899b66ca4b4%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22app%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/@modal/(.)movie/[id]/page": "rsc"
-      },
-      "filename": "app/actions/user-actions.ts",
-      "exportedName": "addToMyList"
-    },
-    "40da2d5f4a3069dcabe55b8ec479cb01bcada4dbf7": {
-      "workers": {
-        "app/@modal/(.)movie/[id]/page": {
-          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Fuser-actions.ts%22%2C%5B%7B%22id%22%3A%22400160122c6c04318d9c552ae360165ecc6451f0c6%22%2C%22exportedName%22%3A%22toggleMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240c68cdadba9ab8344d5af994208badf74e87f3b29%22%2C%22exportedName%22%3A%22removeFromMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240cb4d42bac0a60f352d9da93e4a0decb12cab74e2%22%2C%22exportedName%22%3A%22addToMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%2C%7B%22id%22%3A%2240da2d5f4a3069dcabe55b8ec479cb01bcada4dbf7%22%2C%22exportedName%22%3A%22isInMyList%22%2C%22filename%22%3A%22app%2Factions%2Fuser-actions.ts%22%7D%5D%5D%2C%5B%22%2FUsers%2Fkazuki%2FNetflix-clone%2Fapp%2Factions%2Ftmdb.ts%22%2C%5B%7B%22id%22%3A%224037006cb3874b140dd64798f32337c899b66ca4b4%22%2C%22exportedName%22%3A%22fetchMovieVideos%22%2C%22filename%22%3A%22app%2Factions%2Ftmdb.ts%22%7D%5D%5D%5D&__client_imported__=!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/@modal/(.)movie/[id]/page": "rsc"
-      },
-      "filename": "app/actions/user-actions.ts",
-      "exportedName": "isInMyList"
+      "filename": "lib/actions/tmdb.ts",
+      "exportedName": "fetchMovieVideos"
     }
   },
   "edge": {},

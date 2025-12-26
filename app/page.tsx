@@ -4,7 +4,6 @@ import { Banner } from "./components/Banner";
 import { MovieRow } from "./components/MovieRow";
 import { RowSkeleton } from "./components/RowSkeleton";
 import { fetchRandomMovie, getMovieCategories } from "@/lib/tmdb";
-// 認証はmiddlewareで処理されるため、ここでは不要
 
 export default async function HomePage() {
   const bannerMovie = await fetchRandomMovie();

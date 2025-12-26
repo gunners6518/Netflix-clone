@@ -1,20 +1,45 @@
-## Netflix Clone - Next.js 15 + React 19
+# Netflix Clone - ハンズオン教材
 
-Next.js 15、React 19、Tailwind v4、Shadcn/uiを使用したNetflixクローンアプリケーションです。
+Next.js 15、React 19、Tailwind CSS v4を使用したNetflixクローンアプリケーションのハンズオン教材です。
 
-## 使用技術
+## 📚 この教材について
+
+このプロジェクトは、最新のReact 19とNext.js 15の機能を学習するための実践的なハンズオン教材です。以下の技術スタックと概念を学ぶことができます。
+
+## 🛠️ 使用技術
 
 - **Next.js 15** (App Router)
 - **React 19**
 - **TypeScript**
 - **Tailwind CSS v4** (CSS-first)
 - **Shadcn/ui**
-- **Drizzle ORM** + **PostgreSQL** (Supabase)
-- **Supabase Auth** (@supabase/ssr)
 - **Server Actions**
 - **TMDB API**
 
-## セットアップ
+## 📁 プロジェクト構成
+
+```
+Netflix-clone/
+├── app/                    # Next.js App Router
+│   ├── @modal/            # Intercepting Routes（モーダル表示）
+│   ├── api/               # API Routes
+│   ├── components/        # Reactコンポーネント
+│   │   ├── ui/           # Shadcn/uiコンポーネント
+│   │   ├── Banner.tsx    # バナーコンポーネント
+│   │   ├── Header.tsx    # ヘッダーコンポーネント
+│   │   ├── MovieRow.tsx  # 映画リスト行コンポーネント
+│   │   └── ...
+│   ├── movie/            # 映画詳細ページ
+│   ├── layout.tsx        # ルートレイアウト
+│   └── page.tsx          # ホームページ
+├── lib/                   # ユーティリティ関数
+│   ├── actions/          # Server Actions
+│   ├── tmdb.ts           # TMDB API関連
+│   └── utils.ts          # 共通ユーティリティ
+└── docs/                  # ドキュメント
+```
+
+## 🚀 セットアップ
 
 ### 1. 依存関係のインストール
 
@@ -24,42 +49,20 @@ npm install
 
 ### 2. 環境変数の設定
 
-`.env.local`ファイルを作成し、以下の環境変数を設定してください：
+`.env.local`ファイルをプロジェクトルートに作成し、以下の環境変数を設定してください：
 
 ```env
-# Supabase設定（認証機能に必要）
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-SUPABASE_DATABASE_URL=postgresql://user:password@host:port/database
-
 # TMDB API（映画データ取得に必要）
 TMDB_API_KEY=your_tmdb_api_key
 ```
 
-#### Supabaseの設定方法
-
-1. [Supabase](https://supabase.com/)でプロジェクトを作成
-2. プロジェクト設定から以下を取得：
-   - Project URL → `NEXT_PUBLIC_SUPABASE_URL`
-   - anon/public key → `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-   - Database URL → `SUPABASE_DATABASE_URL`
-
 #### TMDB APIの取得方法
 
 1. [TMDB](https://www.themoviedb.org/)でアカウントを作成
-2. API設定からAPIキーを取得 → `TMDB_API_KEY`
+2. 設定 → API → APIキーのリクエスト
+3. 取得したAPIキーを`.env.local`に設定
 
-### 3. データベースのマイグレーション
-
-```bash
-# スキーマを生成
-npm run db:generate
-
-# マイグレーションを実行
-npm run db:push
-```
-
-### 4. 開発サーバーの起動
+### 3. 開発サーバーの起動
 
 ```bash
 npm run dev
@@ -67,26 +70,49 @@ npm run dev
 
 ブラウザで [http://localhost:3000](http://localhost:3000) を開いて確認してください。
 
-## 機能
+## ✨ 主な機能
 
-- ✅ 映画一覧の表示（Server Components）
-- ✅ 映画詳細モーダル（Intercepting Routes）
-- ✅ マイリスト機能（楽観的UI）
-- ✅ 認証機能（Supabase Auth）
-- ✅ ストリーミングレンダリング（Suspense）
-- ✅ レスポンシブデザイン
+- ✅ **Server Components** - サーバーサイドでのデータ取得とレンダリング
+- ✅ **Intercepting Routes** - モーダル表示による映画詳細の表示
+- ✅ **YouTubeトレイラー** - 映画のトレイラー動画の表示
+- ✅ **Streaming SSR** - Suspenseを使ったストリーミングレンダリング
+- ✅ **Server Actions** - サーバーサイドでのデータ処理
+- ✅ **レスポンシブデザイン** - モバイル・タブレット・デスクトップ対応
 
-## 注意事項
+## 📖 学習ポイント
 
-- Supabaseの設定がない場合、認証機能は動作しませんが、映画一覧の表示は可能です
-- TMDB APIキーがない場合、映画データは取得できません
+### React 19の新機能
 
-## スクリプト
+- **Server Components** - デフォルトでサーバーコンポーネント
+- **Async Components** - コンポーネント内で直接async/awaitを使用
+- **Suspense** - ストリーミングレンダリングによるUX向上
+
+### Next.js 15の機能
+
+- **App Router** - ファイルベースのルーティング
+- **Intercepting Routes** - パラレルルートとインターセプティングルート
+- **Server Actions** - サーバーサイドでのデータ処理
+- **Streaming** - 段階的なコンテンツの読み込み
+
+### アーキテクチャパターン
+
+- **Server/Client Component分離** - 適切な場所でクライアントコンポーネントを使用
+- **データフェッチング** - Server Componentsでの効率的なデータ取得
+- **エラーハンドリング** - 適切なエラー処理とフォールバック
+
+## 📝 スクリプト
 
 - `npm run dev` - 開発サーバーを起動
 - `npm run build` - プロダクションビルド
 - `npm run start` - プロダクションサーバーを起動
 - `npm run lint` - リンターを実行
-- `npm run db:generate` - Drizzleスキーマを生成
-- `npm run db:push` - データベースにスキーマをプッシュ
-- `npm run db:studio` - Drizzle Studioを起動
+
+## ⚠️ 注意事項
+
+- TMDB APIキーがない場合、映画データは取得できません
+- APIのレート制限に注意してください
+- 本プロジェクトは学習目的のため、本番環境での使用は推奨しません
+
+## 📄 ライセンス
+
+このプロジェクトは学習目的で作成されています。

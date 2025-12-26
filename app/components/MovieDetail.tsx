@@ -1,8 +1,6 @@
 import { fetchMovieById } from "@/lib/tmdb";
-import { isInMyList } from "@/app/actions/user-actions";
-import { MyListButton } from "./MyListButton";
 import { CloseModalButton } from "./CloseModalButton";
-import { fetchMovieVideos } from "@/app/actions/tmdb";
+import { fetchMovieVideos } from "@/lib/actions/tmdb";
 
 type MovieDetailProps = {
   movieId: string;
@@ -10,9 +8,8 @@ type MovieDetailProps = {
 };
 
 export async function MovieDetail({ movieId, isModal = false }: MovieDetailProps) {
-  const [movie, inMyList, trailerKey] = await Promise.all([
+  const [movie, trailerKey] = await Promise.all([
     fetchMovieById(movieId),
-    isInMyList(movieId),
     fetchMovieVideos(movieId),
   ]);
 
@@ -34,7 +31,6 @@ export async function MovieDetail({ movieId, isModal = false }: MovieDetailProps
     >
       {isModal && <CloseModalButton />}
       
-      {/* Backdrop */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -44,12 +40,10 @@ export async function MovieDetail({ movieId, isModal = false }: MovieDetailProps
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
       </div>
 
-      {/* Content */}
       <div className={`relative z-10 container mx-auto px-8 py-16 ${isModal ? "pt-20" : ""}`}>
         <div className="max-w-4xl">
           <div className="flex items-center gap-4 mb-6">
             <h1 className="text-5xl font-bold">{movie.name}</h1>
-            <MyListButton movieId={movieId} initialIsInList={inMyList} />
           </div>
 
           <p className="text-lg mb-8 leading-relaxed max-w-2xl">

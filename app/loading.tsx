@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "@/app/components/ui/skeleton";
 import { RowSkeleton } from "./components/RowSkeleton";
 
 export default function Loading() {

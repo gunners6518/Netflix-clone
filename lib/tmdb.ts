@@ -23,7 +23,6 @@ function getApiKey() {
   if (!apiKey) {
     throw new Error("TMDB_API_KEY is not set");
   }
-  // 余分な空白や改行を削除
   const cleanedKey = apiKey.trim();
   if (!cleanedKey) {
     throw new Error("TMDB_API_KEY is empty after trimming");
@@ -69,7 +68,7 @@ export function getMovieCategories(): MovieCategory[] {
 
 export async function fetchMovies(url: string): Promise<Movie[]> {
   const response = await fetch(url, {
-    next: { revalidate: 3600 }, // 1時間キャッシュ
+    next: { revalidate: 3600 },
   });
 
   if (!response.ok) {
@@ -89,13 +88,15 @@ export async function fetchMovies(url: string): Promise<Movie[]> {
   }
 
   const data: TMDBResponse = await response.json();
-  return data.results.map((movie) => ({
-    id: String(movie.id),
-    name: movie.name || "",
-    poster_path: movie.poster_path,
-    backdrop_path: movie.backdrop_path,
-    overview: movie.overview || "",
-  }));
+  return data.results
+    .filter((movie) => movie.poster_path || movie.backdrop_path)
+    .map((movie) => ({
+      id: String(movie.id),
+      name: movie.name || "",
+      poster_path: movie.poster_path,
+      backdrop_path: movie.backdrop_path,
+      overview: movie.overview || "",
+    }));
 }
 
 export async function fetchMovieById(movieId: string): Promise<Movie | null> {
@@ -133,8 +134,9 @@ export async function fetchNetflixOriginals(): Promise<Movie[]> {
 
 export async function fetchRandomMovie(): Promise<Movie | null> {
   const movies = await fetchNetflixOriginals();
-  if (movies.length === 0) {
+  const moviesWithBackdrop = movies.filter((movie) => movie.backdrop_path);
+  if (moviesWithBackdrop.length === 0) {
     return null;
   }
-  return movies[Math.floor(Math.random() * movies.length)];
+  return moviesWithBackdrop[Math.floor(Math.random() * moviesWithBackdrop.length)];
 }

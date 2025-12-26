@@ -25,11 +25,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/api/movies/[id]/videos/route.js"
-    ],
-    "/@modal/(.)movie/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/@modal/(.)movie/[id]/page.js"
     ]
   }
 }
